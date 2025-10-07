@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+    background: url("./images/bg.jpg") center/cover fixed no-repeat;
+    margin: 0;
+    padding: 70px 0 0;
+    font-family: "Smooch Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+h1, .headings {
+    font-family: "Bebas Neue", sans-serif;
+    color: yellow;
+}
+
+/* Header (Hero Section) */
+.header {
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevents items from stacking */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Logo Styling */
+.logo {
+    height: 45px;
+    width: auto;
+    margin-right: 15px; /* Reduce space between logo and nav links */
+}
+
+/* Navbar Items */
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px; /* Reduce spacing between items */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item {
+    white-space: nowrap; /* Prevent text from breaking into new lines */
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: yellow !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+    .navbar-nav {
+        gap: 10px; /* Further reduce spacing on smaller screens */
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+}
+
+/* Sections Styling */
+.Feature, .new, .eve, .con {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 80%;
+    margin: 15% auto;
+    min-height: 70vh;
+    box-shadow: 0 0 15px #ffcc00;
+    border: 2px solid #ffcc00;
+    font-family: "Bebas Neue", serif;
+}
+
+.Feature { background-image: url("./images/features.jpg"); }
+.new { background-image: url("./images/nb.jpg"); }
+.eve { background-image: url("./images/eb.jpg"); }
+.con { background-image: url("./images/cb.jpg"); }
+
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+.para {
+    margin-top: 5%;
+    color: white;
+}
+
+/* Contact Form */
+#Contact form {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+#Contact input, #Contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
+}
+
+#Contact textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+/* Sections Layout */
+section {
+    width: 100%;
+    padding: 100px 0;
+    min-height: 100vh;
+    scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .Feature, .new, .eve, .con {
+        padding: 20px;
+        max-width: 90%;
+        margin: 28% auto;
+       
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .image {
+        width: 60%;
+        max-width: 300px;
+    }
+}
